@@ -66,7 +66,7 @@ export default function VibeCodingLanding() {
           .tools-grid { grid-template-columns: repeat(2, 1fr) !important; }
         }
       `}</style>
-
+      
       <div style={styles.container}>
         {/* Navigation */}
         <nav style={{
@@ -106,8 +106,8 @@ export default function VibeCodingLanding() {
         </section>
 
         {/* Intro Section */}
-        <section
-          id="methodology"
+        <section 
+          id="methodology" 
           ref={(el) => (sectionRefs.current['methodology'] = el)}
           style={styles.section}
         >
@@ -129,15 +129,15 @@ export default function VibeCodingLanding() {
         </section>
 
         {/* Features - Bento Grid */}
-        <section
-          id="protocol"
+        <section 
+          id="protocol" 
           ref={(el) => (sectionRefs.current['protocol'] = el)}
           style={styles.featuresSection}
         >
           <div style={styles.featuresContainer}>
             <div className="features-grid" style={styles.featuresGrid}>
               {/* Full Width Card */}
-              <div
+              <div 
                 className="card-hover card-full"
                 style={{
                   ...styles.card,
@@ -155,7 +155,7 @@ export default function VibeCodingLanding() {
               </div>
 
               {/* Two Column Cards */}
-              <div
+              <div 
                 className="card-hover"
                 style={{
                   ...styles.card,
@@ -171,7 +171,7 @@ export default function VibeCodingLanding() {
                 </p>
               </div>
 
-              <div
+              <div 
                 className="card-hover"
                 style={{
                   ...styles.card,
@@ -191,8 +191,8 @@ export default function VibeCodingLanding() {
         </section>
 
         {/* Tools */}
-        <section
-          id="community"
+        <section 
+          id="community" 
           ref={(el) => (sectionRefs.current['community'] = el)}
           style={styles.toolsSection}
         >
@@ -209,8 +209,8 @@ export default function VibeCodingLanding() {
             </h2>
             <div className="tools-grid" style={styles.toolsGrid}>
               {tools.map((tool, i) => (
-                <div
-                  key={i}
+                <div 
+                  key={i} 
                   className="card-hover"
                   style={{
                     ...styles.toolCard,
@@ -233,8 +233,8 @@ export default function VibeCodingLanding() {
         </section>
 
         {/* Demo Section */}
-        <section
-          id="demo"
+        <section 
+          id="demo" 
           ref={(el) => (sectionRefs.current['demo'] = el)}
           style={styles.demoSection}
         >
@@ -251,8 +251,8 @@ export default function VibeCodingLanding() {
             <div style={styles.codeWindow}>
               <div style={styles.codeHeader}>
                 <div style={styles.dot} />
-                <div style={{ ...styles.dot, backgroundColor: '#febc2e' }} />
-                <div style={{ ...styles.dot, backgroundColor: '#28c840' }} />
+                <div style={{...styles.dot, backgroundColor: '#febc2e'}} />
+                <div style={{...styles.dot, backgroundColor: '#28c840'}} />
                 <span style={styles.codeHeaderTitle}>terminal</span>
               </div>
               <div style={styles.codeContent}>
@@ -263,8 +263,8 @@ export default function VibeCodingLanding() {
         </section>
 
         {/* CTA Section */}
-        <section
-          id="contact"
+        <section 
+          id="contact" 
           ref={(el) => (sectionRefs.current['contact'] = el)}
           style={styles.ctaSection}
         >
@@ -302,7 +302,7 @@ export default function VibeCodingLanding() {
 function TypewriterText() {
   const [text, setText] = useState('');
   const [phase, setPhase] = useState(0);
-
+  
   const messages = [
     { type: 'user', content: '> "로그인 페이지 만들어줘"' },
     { type: 'ai', content: '✓ 로그인 컴포넌트 생성 완료' },
@@ -369,7 +369,7 @@ const styles = {
     overflowX: 'hidden',
     lineHeight: 1.5,
   },
-
+  
   // Navigation
   nav: {
     position: 'fixed',
